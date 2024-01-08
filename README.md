@@ -18,7 +18,7 @@ See `requirements.txt` for a full list of packages required.
 
 ## Training
 
-Code to train the model resides in 'train' folder. To train the Fixation Diffuser and Head-Eye Diffuser, you have to change the path to load the `imgToFix_opt.txt` and `fixToGaze_opt.txt` files in `data_loaders/dataset.py`.
+Code to train the model resides in `train` folder. To train the Fixation Diffuser and Head-Eye Diffuser, you have to change the path to load the `imgToFix_opt.txt` and `fixToGaze_opt.txt` files in `data_loaders/dataset.py`.
 
 ```shell
 python -m train.train_CAHE --save_dir <Path/to/save/checkpoints/and/results> --dataset imgToFix
