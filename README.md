@@ -20,9 +20,9 @@ See '''requirements.txt''' for a full list of packages required.
 
 Code to train the model resides in '''train''' folder. To train the Fixation Diffuser and Head-Eye Diffuser, you have to change the path to load the '''imgToFix_opt.txt''' and '''fixToGaze_opt.txt''' files in '''data_loaders/dataset.py'''.
 
-'''
+```shell
 python -m train.train_CAHE --save_dir <Path/to/save/checkpoints/and/results> --dataset imgToFix
-'''
+```
 
 * Use `--dataset` to choose one of the dataset in two stages `{imgToFix, fixToGaze}` (`imgToFix` is default).
 * Add `--train_platform_type {ClearmlPlatform, TensorboardPlatform}` to track results with either [ClearML](https://clear.ml/) or [Tensorboard](https://www.tensorflow.org/tensorboard).
@@ -31,17 +31,17 @@ python -m train.train_CAHE --save_dir <Path/to/save/checkpoints/and/results> --d
 
 Code to sample resides in '''sample''' folder.
 
-'''
+```shell
 python -m sample.generate --model_path <path/to/checkpoint/file/to/be/sampled> --test_txt <path/to/a/text/file/lists/test/numbers> --cond_path <path/to/condition/data>
-'''
+```
 
 ## Visualization
 
 Code to visualize the generated fixation points.
 
-'''
+```shell
 python -m visualize.visual_fixation
-'''
+```
 
 # Acknowledgement
 
