@@ -47,4 +47,4 @@ python -m visualize.visual_fixation
 
 This code is standing on the shoulders of giants. We want to thank the following contributors that our code is based on:
 
-[guided-diffusion](https://github.com/openai/guided-diffusion), [MotionCLIP]().
+[guided-diffusion](https://github.com/openai/guided-diffusion), [motion-diffusion-model](https://github.com/GuyTevet/motion-diffusion-model).
