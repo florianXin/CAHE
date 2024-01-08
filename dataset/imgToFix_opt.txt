@@ -1,0 +1,6 @@
+------------ Options -------------
+data_root: E:/1/Dataset
+checkpoints_dir: ./checkpoints
+dataset_name: imgToFix
+is_train: True
+-------------- End ----------------
