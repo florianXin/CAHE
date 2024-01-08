@@ -12,13 +12,13 @@ To download the dataset, please check [our project page](https://sites.google.co
 * PyTorch
 * CUDA capable GPU (one is enough)
 
-See 'requirements.txt' for a full list of packages required.
+See `requirements.txt` for a full list of packages required.
 
 # Usage
 
 ## Training
 
-Code to train the model resides in 'train' folder. To train the Fixation Diffuser and Head-Eye Diffuser, you have to change the path to load the '''imgToFix_opt.txt''' and '''fixToGaze_opt.txt''' files in '''data_loaders/dataset.py'''.
+Code to train the model resides in 'train' folder. To train the Fixation Diffuser and Head-Eye Diffuser, you have to change the path to load the `imgToFix_opt.txt` and `fixToGaze_opt.txt` files in `data_loaders/dataset.py`.
 
 ```shell
 python -m train.train_CAHE --save_dir <Path/to/save/checkpoints/and/results> --dataset imgToFix
@@ -29,7 +29,7 @@ python -m train.train_CAHE --save_dir <Path/to/save/checkpoints/and/results> --d
 
 ## Testing
 
-Code to sample resides in 'sample' folder.
+Code to sample resides in `sample` folder.
 
 ```shell
 python -m sample.generate --model_path <path/to/checkpoint/file/to/be/sampled> --test_txt <path/to/a/text/file/lists/test/numbers> --cond_path <path/to/condition/data>
